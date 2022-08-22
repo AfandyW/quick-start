@@ -15,6 +15,27 @@ echo "plugins=(git
 zsh-autosuggestions
 )">> ~/.zshrc
 
+echo 'alias zshconfig="nano ~/.zshrc"' >> ~/.zshrc 
+echo 'alias codezsh="code ~/.zshrc"' >> ~/.zshrc 
+echo 'alias cl="clear"'>> ~/.zshrc 
+
+#git
+echo 'alias gi="git init"'>> ~/.zshrc 
+echo 'alias ga="git add"'>> ~/.zshrc 
+echo 'alias gc="git checkout"'>> ~/.zshrc 
+echo 'alias gb="git branch"'>> ~/.zshrc 
+
+# install table plus 
+# Add TablePlus gpg key
+wget -qO - https://deb.tableplus.com/apt.tableplus.com.gpg.key | sudo apt-key add -
+
+# Add TablePlus repo
+sudo add-apt-repository "deb [arch=amd64] https://deb.tableplus.com/debian/21 tableplus main"
+
+# Install
+sudo apt update
+sudo apt install tableplus
+
 # manual install postman
 #wget https://dl.pstmn.io/download/latest/linux64
 #sudo tar -xvf [file-name.tar.gz] -C /usr/bin
@@ -40,14 +61,8 @@ echo 'export GOPATH=$HOME/development/go' >> ~/.zshrc
 echo 'export PATH="$PATH:/usr/bin/Postman"' >> ~/.zshrc
 echo 'export PATH="$PATH:/usr/bin/Postman"' >> ~/.zshrc
 
-echo 'alias zshconfig="nano ~/.zshrc"' >> ~/.zshrc 
-echo 'alias codezsh="code ~/.zshrc"' >> ~/.zshrc 
-echo 'alias cl="clear"'>> ~/.zshrc 
-#git
-echo 'alias gi="git init"'>> ~/.zshrc 
-echo 'alias ga="git add"'>> ~/.zshrc 
-echo 'alias gc="git checkout"'>> ~/.zshrc 
-echo 'alias gb="git branch"'>> ~/.zshrc 
+
+
 #golang
 echo 'alias gv="go version"'>> ~/.zshrc 
 echo 'alias gr="go run"'>> ~/.zshrc 
