@@ -2,7 +2,7 @@
 
 clone repo first
 ```
-git clone 
+git clone git@github.com:AfandyW/quick-start.git
 ```
 
 ## Run
